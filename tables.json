@@ -1,0 +1,10 @@
+{
+  "tables": {
+    "employees": {
+      "columns": ["id", "name","address","salary"]
+    },
+    "countries": {
+      "columns": ["id","name", "capital","area"]
+    }
+  }
+}

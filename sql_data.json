@@ -1,0 +1,5 @@
+[
+  {"question": "What is the capital of France?", "query": "SELECT capital FROM countries WHERE name = 'France'"},
+  {"question": "How many employees does company X have?", "query": "SELECT COUNT(*) FROM employees WHERE company = 'X'"},
+  {"question": "How much is the sum of salary of employees in company X?","query":"select sum(salary) from employees where company='X'"}
+]
