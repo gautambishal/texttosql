@@ -1,0 +1,99 @@
+2023-12-02 15:40:27,573 - INFO - allennlp.common.params - random_seed = 13370
+2023-12-02 15:40:27,574 - INFO - allennlp.common.params - numpy_seed = 1337
+2023-12-02 15:40:27,574 - INFO - allennlp.common.params - pytorch_seed = 133
+2023-12-02 15:40:27,578 - INFO - allennlp.common.checks - Pytorch version: 1.12.1+cu102
+2023-12-02 15:40:27,579 - INFO - allennlp.common.params - type = default
+2023-12-02 15:40:27,583 - INFO - allennlp.common.params - dataset_reader.type = sql
+2023-12-02 15:40:27,583 - INFO - allennlp.common.params - dataset_reader.tokenizer = None
+2023-12-02 15:40:27,583 - INFO - allennlp.common.params - dataset_reader.token_indexers = None
+2023-12-02 15:40:27,583 - INFO - allennlp.common.params - dataset_reader.lazy = False
+2023-12-02 15:41:24,662 - INFO - allennlp.common.params - train_data_path = sql_data.json
+2023-12-02 15:41:24,664 - INFO - allennlp.common.params - vocabulary = <allennlp.common.lazy.Lazy object at 0x7f105aefb940>
+2023-12-02 15:41:24,664 - INFO - allennlp.common.params - datasets_for_vocab_creation = None
+2023-12-02 15:41:24,664 - INFO - allennlp.common.params - validation_dataset_reader = None
+2023-12-02 15:41:24,665 - INFO - allennlp.common.params - validation_data_path = None
+2023-12-02 15:41:24,669 - INFO - allennlp.common.params - validation_data_loader = None
+2023-12-02 15:41:24,669 - INFO - allennlp.common.params - test_data_path = None
+2023-12-02 15:41:24,670 - INFO - allennlp.common.params - evaluate_on_test = False
+2023-12-02 15:41:24,670 - INFO - allennlp.common.params - batch_weight_key = 
+2023-12-02 15:41:24,670 - INFO - allennlp.common.params - data_loader.type = multiprocess
+2023-12-02 15:41:24,671 - INFO - allennlp.common.params - data_loader.batch_size = None
+2023-12-02 15:41:24,672 - INFO - allennlp.common.params - data_loader.drop_last = False
+2023-12-02 15:41:24,672 - INFO - allennlp.common.params - data_loader.shuffle = False
+2023-12-02 15:41:24,672 - INFO - allennlp.common.params - data_loader.batch_sampler.type = bucket
+2023-12-02 15:41:24,672 - INFO - allennlp.common.params - data_loader.batch_sampler.batch_size = 64
+2023-12-02 15:41:24,673 - INFO - allennlp.common.params - data_loader.batch_sampler.sorting_keys = ['source_tokens', 'num_tokens']
+2023-12-02 15:41:24,673 - INFO - allennlp.common.params - data_loader.batch_sampler.padding_noise = 0.1
+2023-12-02 15:41:24,673 - INFO - allennlp.common.params - data_loader.batch_sampler.drop_last = True
+2023-12-02 15:41:24,673 - INFO - allennlp.common.params - data_loader.batch_sampler.shuffle = True
+2023-12-02 15:41:24,673 - INFO - allennlp.common.params - data_loader.batches_per_epoch = None
+2023-12-02 15:41:24,673 - INFO - allennlp.common.params - data_loader.num_workers = 0
+2023-12-02 15:41:24,673 - INFO - allennlp.common.params - data_loader.max_instances_in_memory = 1000
+2023-12-02 15:41:24,673 - INFO - allennlp.common.params - data_loader.start_method = fork
+2023-12-02 15:41:24,674 - INFO - allennlp.common.params - data_loader.cuda_device = None
+2023-12-02 15:41:24,674 - INFO - allennlp.common.params - data_loader.quiet = False
+2023-12-02 15:41:24,674 - INFO - allennlp.common.params - data_loader.collate_fn = <allennlp.data.data_loaders.data_collator.DefaultDataCollator object at 0x7f1070addd50>
+2023-12-02 15:41:24,675 - INFO - allennlp.common.params - type = from_instances
+2023-12-02 15:41:24,675 - INFO - allennlp.common.params - min_count = None
+2023-12-02 15:41:24,675 - INFO - allennlp.common.params - max_vocab_size = None
+2023-12-02 15:41:24,675 - INFO - allennlp.common.params - non_padded_namespaces = ('*tags', '*labels')
+2023-12-02 15:41:24,675 - INFO - allennlp.common.params - pretrained_files = None
+2023-12-02 15:41:24,676 - INFO - allennlp.common.params - only_include_pretrained_words = False
+2023-12-02 15:41:24,676 - INFO - allennlp.common.params - tokens_to_add = None
+2023-12-02 15:41:24,676 - INFO - allennlp.common.params - min_pretrained_embeddings = None
+2023-12-02 15:41:24,676 - INFO - allennlp.common.params - padding_token = @@PADDING@@
+2023-12-02 15:41:24,676 - INFO - allennlp.common.params - oov_token = @@UNKNOWN@@
+2023-12-02 15:41:24,676 - INFO - allennlp.data.vocabulary - Fitting token dictionary from dataset.
+2023-12-02 15:41:24,677 - INFO - tqdm - building vocab: 0it [00:00, ?it/s]
+2023-12-02 15:41:24,677 - INFO - tqdm - loading instances: 0it [00:00, ?it/s]
+2023-12-02 15:41:24,679 - CRITICAL - root - Uncaught exception
+Traceback (most recent call last):
+  File "/home/oem/IdeaProjects/sqlgen/venv/bin/allennlp", line 8, in <module>
+    sys.exit(run())
+  File "/home/oem/IdeaProjects/sqlgen/venv/lib/python3.10/site-packages/allennlp/__main__.py", line 39, in run
+    main(prog="allennlp")
+  File "/home/oem/IdeaProjects/sqlgen/venv/lib/python3.10/site-packages/allennlp/commands/__init__.py", line 120, in main
+    args.func(args)
+  File "/home/oem/IdeaProjects/sqlgen/venv/lib/python3.10/site-packages/allennlp/commands/train.py", line 111, in train_model_from_args
+    train_model_from_file(
+  File "/home/oem/IdeaProjects/sqlgen/venv/lib/python3.10/site-packages/allennlp/commands/train.py", line 177, in train_model_from_file
+    return train_model(
+  File "/home/oem/IdeaProjects/sqlgen/venv/lib/python3.10/site-packages/allennlp/commands/train.py", line 258, in train_model
+    model = _train_worker(
+  File "/home/oem/IdeaProjects/sqlgen/venv/lib/python3.10/site-packages/allennlp/commands/train.py", line 494, in _train_worker
+    train_loop = TrainModel.from_params(
+  File "/home/oem/IdeaProjects/sqlgen/venv/lib/python3.10/site-packages/allennlp/common/from_params.py", line 604, in from_params
+    return retyped_subclass.from_params(
+  File "/home/oem/IdeaProjects/sqlgen/venv/lib/python3.10/site-packages/allennlp/common/from_params.py", line 638, in from_params
+    return constructor_to_call(**kwargs)  # type: ignore
+  File "/home/oem/IdeaProjects/sqlgen/venv/lib/python3.10/site-packages/allennlp/commands/train.py", line 768, in from_partial_objects
+    vocabulary_ = vocabulary.construct(instances=instance_generator)
+  File "/home/oem/IdeaProjects/sqlgen/venv/lib/python3.10/site-packages/allennlp/common/lazy.py", line 82, in construct
+    return self.constructor(**contructor_kwargs)
+  File "/home/oem/IdeaProjects/sqlgen/venv/lib/python3.10/site-packages/allennlp/common/lazy.py", line 66, in constructor_to_use
+    return self._constructor.from_params(  # type: ignore[union-attr]
+  File "/home/oem/IdeaProjects/sqlgen/venv/lib/python3.10/site-packages/allennlp/common/from_params.py", line 604, in from_params
+    return retyped_subclass.from_params(
+  File "/home/oem/IdeaProjects/sqlgen/venv/lib/python3.10/site-packages/allennlp/common/from_params.py", line 638, in from_params
+    return constructor_to_call(**kwargs)  # type: ignore
+  File "/home/oem/IdeaProjects/sqlgen/venv/lib/python3.10/site-packages/allennlp/data/vocabulary.py", line 317, in from_instances
+    for instance in Tqdm.tqdm(instances, desc="building vocab"):
+  File "/home/oem/IdeaProjects/sqlgen/venv/lib/python3.10/site-packages/tqdm/std.py", line 1182, in __iter__
+    for obj in iterable:
+  File "/home/oem/IdeaProjects/sqlgen/venv/lib/python3.10/site-packages/allennlp/commands/train.py", line 764, in <genexpr>
+    if datasets_for_vocab_creation is None or key in datasets_for_vocab_creation
+  File "/home/oem/IdeaProjects/sqlgen/venv/lib/python3.10/site-packages/allennlp/data/data_loaders/multiprocess_data_loader.py", line 360, in iter_instances
+    for instance in self._maybe_tqdm(
+  File "/home/oem/IdeaProjects/sqlgen/venv/lib/python3.10/site-packages/tqdm/std.py", line 1182, in __iter__
+    for obj in iterable:
+  File "/home/oem/IdeaProjects/sqlgen/venv/lib/python3.10/site-packages/allennlp/data/dataset_readers/dataset_reader.py", line 192, in read
+    for instance in self._multi_worker_islice(self._read(file_path)):  # type: ignore
+  File "/home/oem/IdeaProjects/sqlgen/texttosql/CustomSQLDatasetReader.py", line 30, in _read
+    data = json.loads(line)
+  File "/usr/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.10/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.10/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 2 column 1 (char 2)
