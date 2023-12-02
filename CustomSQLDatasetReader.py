@@ -18,7 +18,7 @@ class CustomSQLDatasetReader(DatasetReader):
             self,
             tokenizer: Tokenizer = None,
             token_indexers: Dict[str, TokenIndexer] = None,
-            lazy: bool = False,
+            lazy: bool = False
     ) -> None:
         super().__init__()
         self.tokenizer = tokenizer or PretrainedTransformerTokenizer(model_name="amd-nicknick/bert-base-uncased-2022_tokenizer")
